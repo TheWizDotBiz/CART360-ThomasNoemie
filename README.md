@@ -15,7 +15,7 @@ Concordia University, Faculty of Fine Arts, Department of Design & Computation A
 
 The mask will offer a temporary persona for the user, one that they can manipulate with their biometric data. It is intended to be an experience that a variety of people can try, by wearing the piece and immersing themselves in different everyday scenarios such as reading and listening to music to bring out different outputs from the mask. 
 
-The aim of the project is to make the wearer and the audience feel some kind of protection and curiosity. Most of the components will be soft and flexible, abstract, and textile-like to avoid an uncanny valley feeling. By observing the mask’s different responses, users will be encouraged to play with their level of emotions, calm, and stress. This prompts reflections of the significance of such intimate proximity with an object in a day to day scenario. It leans towards exploration, since growing trust in those personas and the reactions of the adornment can be a challenge. It also raises questions about privacy and performed identities
+The aim of the object is to make the wearer and the audience feel some kind of curiosity. It will be inspired by the work of different artists working in the field of privacy, more specifically those abstract face covers to blur facial recognition softwares. By observing the mask’s different responses, users will be encouraged to play with their level of emotions, calm, and stress. This prompts reflections of the significance of such intimate proximity with an object in a day to day scenario. It leans towards exploration, since growing trust in those personas and the reactions of the adornment can be a challenge. It also raises questions about privacy and performed identities in different contexts.
 
 By being more conscious of their biometric data, the user can reflect on how their emotions are manifested. This awareness enables users to consider that identity can express itself in a lot of different ways.
 
@@ -66,19 +66,18 @@ By being more conscious of their biometric data, the user can reflect on how the
 ------------- 
 ### [Aposema](https://www.instructables.com/APOSEMA/) 
 *Masters thesis project made by [Adi Meyer](http://www.adimeyer.com/), [Sirou Peng](https://www.siroupeng.com/) and [Silvia Rueda](https://www.silviarueda.com/portfolio), as part of the [interactive architecture lab](http://www.interactivearchitecture.org/) in the Bartlett, supervised by [Yuri Suzuki](http://yurisuzuki.com/) and [Ruairi Glynn,](http://www.ruairiglynn.co.uk/) 2017*
-Using muscle sensors and an inflatable system, they created a silicone mask that reacts to the wearer's facial expressions
+	Using muscle sensors and an inflatable system, they created a silicone mask that reacts to the wearer's facial expressions
 
 ### [Printed Paper Actuator](https://www.morphingmatter.cs.cmu.edu/projects/printed-paper-actuator)
 *By Guanyun Wang, Tingyu Cheng, Youngwook Do, Humphrey Yang, Ye Tao, Jianzhe Gu, Byoungkwon An, Lining Yao from the morphing matter lab 2018* 
+	Book using simple paper actuator that they developed. It is interesting to see how electronics can be concealed on a simple material like paper to generate movement.
 
-Book using simple paper actuator that they developed. It is interesting to see how electronics can be concealed on a simple material like paper to generate movement.
+### [Surveillance Exclusion](http://www.jipvanleeuwenstein.nl/)
+by Jip Van Leeuenstein
+### [Privacy Visor](https://slate.com/technology/2013/01/isao-echizen-and-seiichi-gohshi-s-privacy-visor-shields-you-from-facial-recognition-technology-photo.html)
+by Isao Echizen’s 
 
--------------------------
-- Surveillance Exclusion by Jip Van Leeuenstein [http://www.jipvanleeuwenstein.nl/](http://www.jipvanleeuwenstein.nl/)
-    
-- Isao Echizen’s Privacy Visor
-    
-- Zach Blas’ Facial Weaponisation Suite https://zachblas.info/works/facial-weaponization-suite/
-    
+Zach Blas’ Facial Weaponisation Suite https://zachblas.info/works/facial-weaponization-suite/
+    Inspirations for the physical aspect of the mask.
 
 Most of these project are simply practical in form - a lot of it coming straight out of the HK protests made this a necessity. We also would like to add an artistic and aesthetic value to our project, as well as add some level of protection against traditional methods of recording rather than only facial recognition software (like someone taking a picture of you without your knowing in public, and such).
