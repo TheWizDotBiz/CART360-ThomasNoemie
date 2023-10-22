@@ -50,11 +50,11 @@ By being more conscious of their biometric data, the user can reflect on how the
 			Feedback
 			More torque
 			Less energy required
-	2. [Shape memory alloys](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9919340/) (For morphing (hot?))
-	3. Thermochromic ink
-	4. [Inflatables](https://dl.acm.org/doi/fullHtml/10.1145/3472749.3474802) & Pneumatics (bulky, noisy)
-	5. Electromagnets (high amp)
-
+	2. [Shape memory alloys](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9919340/) (For morphing. Hot, high voltage?)
+	3. [Inflatables](https://dl.acm.org/doi/fullHtml/10.1145/3472749.3474802) & Pneumatics (bulky, noisy)
+	4. Electromagnets (high amp)
+	5. Thermochromic ink
+	6. Polymer Dispersed Liquid Crystal (PLDC) film
 
 ## Illustrations of the interaction
 --------------
@@ -81,3 +81,12 @@ Zach Blas’ Facial Weaponisation Suite https://zachblas.info/works/facial-weapo
     Inspirations for the physical aspect of the mask.
 
 Most of these project are simply practical in form - a lot of it coming straight out of the HK protests made this a necessity. We also would like to add an artistic and aesthetic value to our project, as well as add some level of protection against traditional methods of recording rather than only facial recognition software (like someone taking a picture of you without your knowing in public, and such).
+
+
+
+-------------------------------
+Week 1:
+Our choice stopped at servo motors for output, and muscle sensor for input. We also bought electromagnet coil, to experiment with it and have another option of output. Research is still going on to define the form of the prototype.
+Week 2:
+While exploring compliant linear mechanisms and ways to amplify a linear movement, I stumbled across a video about preprogrammed curved surfaces https://www.youtube.com/watch?v=JeOrhh6shS8. It will be our base structure to which we can add more outputs to our liking. This week, I will print out different variants of the material, to figure which one requires the less physical compression to do the biggest positive curvature. Thomas will make sure that we have a working input from the muscle sensor.
+Week 3: PRESENTATION OF THE PROTOTYPE
