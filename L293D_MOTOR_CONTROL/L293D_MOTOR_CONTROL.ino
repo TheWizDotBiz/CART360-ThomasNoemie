@@ -1,3 +1,7 @@
+//this library is not necessary to make this work, BUT it does make things a bit cleaner code-wise, less direct manipulation of pins and whatnot
+#include <L293.h>
+
+
 // Arduino DC motor speed and direction control
 //docs
 // https://www.ti.com/lit/ds/symlink/l293d.pdf?ts=1700135201050&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FL293D
