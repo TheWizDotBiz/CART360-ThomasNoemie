@@ -1,3 +1,8 @@
+
+
+//This code is a demonstration of the pulse sensor moving a servo motor at every beginning of beat.
+
+
 #define USE_ARDUINO_INTERRUPTS false
 #include <PulseSensorPlayground.h>
 
@@ -44,7 +49,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if(pulseSensor.sawNewSample()){
     //Serial.println("Saw new sample!");
    // pulseSensor.outputSample();
