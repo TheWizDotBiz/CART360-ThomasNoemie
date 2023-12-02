@@ -6,11 +6,11 @@
 const int servoPin = 2;
 const int servoPin2 = 3;
 const int crownServoPin = 4;
-const int crownServoPin2 = 5;
+//const int crownServoPin2 = 5;
 Servo servo;
 Servo servo2;
 Servo crownServo;
-Servo crownServo2;
+//Servo crownServo2;
 int servoAngle = 0;
 int servoIncrement = 90; //modify this to change speed!
 int servoLimit = 90;
@@ -52,9 +52,9 @@ void setup() {
   servo2.write(servoLimit);
   crownServo.attach(crownServoPin);
   crownServo.write(crownServoLimit);
-  crownServo2.attach(crownServoPin2);
-  crownServo2.write(0);
- // pinMode(9, INPUT);
+  //crownServo2.attach(crownServoPin2);
+  //crownServo2.write(0);
+
 
   pulseSensor.analogInput(inputPin);
  // pulseSensor.blinkOnPulse(ledPin); //kinda dinky, for more accuracy, run an if statement on pulseSensor.SawStartOfBeat() and check if above threshold, then manually run digitalWrite shit.
@@ -153,5 +153,5 @@ void operateCrownMotors(bool sensorActive){
   }
 
   crownServo.write(crownServoAngle);
-  crownServo2.write(180 - crownServoAngle);
+  //crownServo2.write(180 - crownServoAngle);
 }

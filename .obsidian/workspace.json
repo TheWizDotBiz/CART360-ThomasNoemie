@@ -11,11 +11,9 @@
             "id": "b119eee5040b5f7c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ReadMe.md",
-                "mode": "source",
-                "source": false
+                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf"
               }
             }
           }
@@ -69,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8aa60cd10311062",
@@ -85,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ReadMe.md",
+                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ReadMe.md",
+                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ReadMe.md"
+                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf"
               }
             }
           }
@@ -148,6 +147,8 @@
   },
   "active": "b119eee5040b5f7c",
   "lastOpenFiles": [
+    "Final_Circuit.fzz",
+    "ReadMe.md",
     "Prototype/L293D_MOTOR_CONTROL/L293D_MOTOR_CONTROL.ino",
     "Prototype/L293D_MOTOR_CONTROL",
     "Prototype/L293_TIMEBASED_CONTROL/L293_TIMEBASED_CONTROL.ino",
