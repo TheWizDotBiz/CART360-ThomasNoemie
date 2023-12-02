@@ -19,18 +19,22 @@ int crownServoIncrement = 5;
 int crownServoLimit = 90;
 
 //sensor
-const int inputPin = A0;//for heart pulse sensor, itd be a bitch to rename this so whatever
+#define inputPin A0//for heart pulse sensor, itd be a bitch to rename this so whatever
 const int threshold = 512; //neutral should be around 512 but it tends to skid around that, for heart pulse sensor
-const int muscleSensorPin = A1; //for the muscle sensor.
+bool inHeartbeat = false;
+#define muscleSensorPin A1 //for the muscle sensor.
 
 
-const int ledPin = 7; //there was a led on this thing at some point? likely a holdover from the prototype
-const int buttonPin = 9; //we use this button and a 10k ohm resistor before returning it to GND to toggle on and off the blinkOnPulse
+//const int ledPin = 7; //there was a led on this thing at some point? likely a holdover from the prototype
+const int buttonPin = 7; //test button, tap to make the sensors go!
 
 const int offset = 20; //an offset value we use to filter noise
 
 bool ACTIVATED = false; //keep for pausing/resuming purposes if you want to have a panic button
-int lastButtonVal; //used for button control if there is one
+int lastButtonVal = false; //used for button control if there is one
+
+const int secondButtonPin = 8;
+int lastSecondButtonVal = false;
 
 
 
@@ -57,21 +61,49 @@ void setup() {
   pulseSensor.setSerial(Serial);
   pulseSensor.setThreshold(threshold);
 
-  pinMode(muscleSensorPin, INPUT);
+ // pinMode(muscleSensorPin, INPUT);
   //pulseSensor.pause();
+  pinMode(buttonPin, INPUT);
+  pinMode(secondButtonPin, INPUT);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  // start of beat failsafe, done by manually checking heart pulse sensor input
+  /*
+  if(analogRead(inputPin) >= threshold){
+    if(!inHeartbeat){
+      operateMotor();
+      inHeartbeat = true;
+    }
+  }else{
+    inHeartbeat = false;
+  }
+  */
+  if(pulseSensor.sawNewSample()){
+    Serial.print("im here so i dont shit myself"); //hes not lying, the script WILL shit itself if we dont call sawNewSample() for some reason.
+  }
+  
   if(pulseSensor.sawStartOfBeat()){
     Serial.println("Saw start of beat!");
    // pulseSensor.outputBeat();
    operateMotor();
   }
+  
+  if(digitalRead(secondButtonPin) == HIGH){
+    if(lastSecondButtonVal == false){
+      operateMotor();
+      lastSecondButtonVal = true;
+    }
+  }else{
+    lastSecondButtonVal = false;
+  }
 
+  //int analogValTest = analogRead(inputPin);
+  //Serial.println(analogValTest);
   int analogVal = analogRead(muscleSensorPin);
   Serial.println(analogVal);
-  if(analogVal >= 900){
+  if(analogVal >= 1000 || digitalRead(buttonPin) == HIGH){
     operateCrownMotors(true);
   }else{
     operateCrownMotors(false);
