@@ -1,3 +1,7 @@
+//This is the code used in the final product, as seen during the presentation
+//This uses a heart pulse sensor to make two opposite servos turn 90 degrees in sync whenever the sensor picks up a heart beat
+//It also uses a muscle sensor placed on the forehead that makes two other servos on the back tilt back when the sensor reads high, and makes the crown sit upright when it doesn't
+//Some other utils and holdovers are present as well
 #define USE_ARDUINO_INTERRUPTS false
 #include <PulseSensorPlayground.h>
 
@@ -70,6 +74,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   // start of beat failsafe, done by manually checking heart pulse sensor input
+  // addendum: this was an attempt at fixing the issue we had with pulseSensor on presentation day, it works but its incredibly unreliable
   /*
   if(analogRead(inputPin) >= threshold){
     if(!inHeartbeat){
@@ -81,15 +86,16 @@ void loop() {
   }
   */
   if(pulseSensor.sawNewSample()){
-    Serial.print("im here so i dont shit myself"); //hes not lying, the script WILL shit itself if we dont call sawNewSample() for some reason.
+    //literally nothing, if i dont put this in, pulseSensor doesnt seem to start.
   }
   
+  //operates the side motors every time a new heartbeat is detected  on the hearpulse sensor
   if(pulseSensor.sawStartOfBeat()){
     Serial.println("Saw start of beat!");
-   // pulseSensor.outputBeat();
-   operateMotor();
+    operateMotor();
   }
   
+  //A button used while puttig the final product together to test out servos without the need for a sensor
   if(digitalRead(secondButtonPin) == HIGH){
     if(lastSecondButtonVal == false){
       operateMotor();
@@ -99,8 +105,7 @@ void loop() {
     lastSecondButtonVal = false;
   }
 
-  //int analogValTest = analogRead(inputPin);
-  //Serial.println(analogValTest);
+  //Check the analog signal sent by the muscle sensor, and operate crown motors if the signal is strong enough
   int analogVal = analogRead(muscleSensorPin);
   Serial.println(analogVal);
   if(analogVal >= 1000 || digitalRead(buttonPin) == HIGH){
@@ -111,6 +116,7 @@ void loop() {
 }
 
 void toggle(){ //triggered by button presses linked to pin 9, pauses and unpauses the pulseSensor, so when you dont wear it/dont want it to get pulse readings off of random shit you can turn it off. ish.
+ //Addeundum: this isn't used in the final product, its a holdover from the prototype we considered for the final product but turning it on and off sort of does the same job
   if(ACTIVATED){
     Serial.println("PULSESENSOR PAUSED");
     pulseSensor.pause();
@@ -123,6 +129,8 @@ void toggle(){ //triggered by button presses linked to pin 9, pauses and unpause
 }
 
 //these are important and are actually used in the final product
+//Increments and clamps the servoAngle to be used for the motors on the side. Then makes the servo rotate to the specified angle.
+//Currently it only does 90 degree turns but originally we considered doing shorter, incremental movements.
 void operateMotor(){
   servoAngle += servoIncrement;
   if(servoAngle >= servoLimit){
@@ -139,6 +147,9 @@ void operateMotor(){
   servo2.write(180 - servoAngle);
 }
 
+//same as operateMotor(), but we use the servos and the variables for the crown at the back instead.
+//Note that this can control two motors but the final project only operates one.
+//We couldnt fit two more motors to move the crown, so we ended up attaching it to a string to a single servo placed in the middle instead to create a similar, albeit slightly weaker, effect.
 void operateCrownMotors(bool sensorActive){
   if(sensorActive){
     crownServoAngle -= crownServoIncrement;

@@ -1,3 +1,7 @@
+//An attempt at using the electromagnetic motors  with soldered encoders without using the rotaryEncoder library
+//This uses the output cables on the encoder (which switch between HIGH and LOW when the motor turns) to track distance/position
+//This functions using attachInterrupt and increasing the tick value whenever these the encoder output flicks value
+//This didnt work on account that it always moves a different distance depending on the direction
 #include <L293.h>
 
 #define pinFwd 5

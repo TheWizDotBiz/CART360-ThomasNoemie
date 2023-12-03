@@ -1,3 +1,7 @@
+//An attempt at using the electromagnetic motors  with soldered encoders without using the rotaryEncoder library
+//This uses the output cables on the encoder (which switch between HIGH and LOW when the motor turns) to track distance/position
+//This functions using attachInterrupt, identically to L23D_NOLIB.ino but we use analog input pins for the encoder output instead of digital input pins. As we thought it might be the reason we were having precision issues with the motors
+//It was not the issue and it still never moves the same distance forward and backward 
 #include <L293.h>
 
 #define pinFwd A4

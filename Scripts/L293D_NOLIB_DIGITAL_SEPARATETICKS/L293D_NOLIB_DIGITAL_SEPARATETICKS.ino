@@ -1,3 +1,8 @@
+//An attempt at using the electromagnetic motors  with soldered encoders without using the rotaryEncoder library
+//This uses the output cables on the encoder (which switch between HIGH and LOW when the motor turns) to track distance/position
+//This functions using attachInterrupt
+//in this script, we only read one of the output cables every time to calculate the ticks, as i thought it might be related to the issue we had of not being able to do the same distance in different directions
+//It was not the issue and it still never moves the same distance forward and backward 
 #include <L293.h> //dont remember if this iss ncessary
 #include <PulseSensorPlayground.h>
 

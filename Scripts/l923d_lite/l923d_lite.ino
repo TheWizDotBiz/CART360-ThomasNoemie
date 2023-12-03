@@ -1,4 +1,8 @@
 //updateEncoder stuff comes from https://electricdiylab.com/controlling-n20-encoder-micro-gear-motor-with-arduino/
+//An attempt at making a lighter version of a script that operates electromagnetic motors using the L293D motor driver with a library that operates it
+//It also uses the RotaryEncoder library to take advantage of motors we purchased that come with an encoder soldered on.
+//Can't remember if this works or not, one of the known issues was that it was incapable of turning specific distances reapeadtly without error.
+//Its also sort of overcomplicated for what we wanted to do.
 #include <L293.h>
 #include <RotaryEncoder.h>
 #define use_standalone

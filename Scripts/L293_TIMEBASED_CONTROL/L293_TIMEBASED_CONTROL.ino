@@ -1,3 +1,7 @@
+//An attempt at using the electromagnetic motors  with soldered encoders without using the rotaryEncoder library
+//This does not use the encoder to track distance, rather, it uses time.
+//This code makes the motor spin in one direction and the other for a specific amount of time.
+//This did not produce the desired results, as the distance travelled tended to be wildly inconsistent
 #include <L293.h>
 #define use_standalone //declared if you want to use the first circuit layout provided in the examples in the gitHub for this library, comment out to use the two-wire version
 

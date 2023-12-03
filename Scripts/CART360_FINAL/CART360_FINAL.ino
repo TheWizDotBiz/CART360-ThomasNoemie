@@ -1,3 +1,4 @@
+//I think this is what the other L293D scripts are based off of, ironically this is not the code used in the final product. I just thought it was going to be.
 #include <L293.h> //dont remember if this iss ncessary
 #include <PulseSensorPlayground.h>
 
