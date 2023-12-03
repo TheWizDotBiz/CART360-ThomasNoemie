@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "7ad4625660862268",
+        "id": "ac2f9781848f06e9",
         "type": "tabs",
         "children": [
           {
-            "id": "b119eee5040b5f7c",
+            "id": "46110bbf4e0b59af",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a8aa60cd10311062",
@@ -84,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf"
+                "file": "README.md"
               }
             }
           }
@@ -145,8 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b119eee5040b5f7c",
+  "active": "46110bbf4e0b59af",
   "lastOpenFiles": [
+    "Scripts/THIS_ONE_IS_ON_THE_MONEY/THIS_ONE_IS_ON_THE_MONEY.ino",
+    "Scripts/THIS_ONE_IS_ON_THE_MONEY",
+    "FinalProjectCode/FinalProjectCode.ino",
+    "FinalProjectCode",
+    "Proposal/README.md",
+    "Media/398209310_6882422621817742_2832649447243789119_n.mp4",
+    "Untitled.canvas",
+    "2023-12-03.md",
+    "Prototype/PrototypeProgressReport_ThomasRompreNoemieCarrier.pdf",
     "Media/20231202_165209.jpg",
     "Media/20231202_165133.jpg",
     "Media/20231202_165104.jpg",
@@ -157,15 +167,11 @@
     "Media/20231123_211252.jpg",
     "Media/20231123_211247.jpg",
     "Media/20231123_121334.jpg",
-    "Media/20231130_161803.jpg",
     "Media/20231130_210923.mp4",
     "Media",
     "New folder",
     "Final_Circuit.fzz",
-    "ReadMe.md",
-    "Prototype/L293D_MOTOR_CONTROL/L293D_MOTOR_CONTROL.ino",
-    "Prototype/L293D_MOTOR_CONTROL",
-    "Prototype/L293_TIMEBASED_CONTROL/L293_TIMEBASED_CONTROL.ino",
-    "Prototype/L293_TIMEBASED_CONTROL"
+    "README.md",
+    "Prototype/L293D_MOTOR_CONTROL/L293D_MOTOR_CONTROL.ino"
   ]
 }
